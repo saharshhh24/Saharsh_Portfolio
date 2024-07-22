@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm Saharsh, a Full-stack Developer with a passion for futuristic web design.</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+    <section id="about">
+        <h1>About Me</h1>
+        <div class="about-container">
+            <div class="about-info">
+                <p><strong>Name:</strong> Saharsh Naresh Payer</p>
+                <p><strong>Birth Date:</strong> August 24, 2002</p>
+                <p><strong>Nationality:</strong> Indian</p>
+                <p><strong>Mobile Number:</strong> +91 9152184760</p>
+                <p><strong>Email:</strong> saharsh.p24@gmail.com</p>
+                <p><strong>Address:</strong> Navi Mumbai, Maharashtra, India</p>
+            </div>
+            <div class="about-photo">
+                <img src="Saharsh Final Photo.jpg" alt="Saharsh">
+            </div>
+        </div>
+    </section>    
+    <section id="projects">
+        <h1>My Projects</h1>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="Engraver.png" alt="Smart Laser Engraver">
+                <h2>Smart Laser Engraver</h2>
+                <p>Developed a smart laser engraver using Arduino Uno, motor drivers, PCB, and Python-based software to precisely engrave designs on wood, with laser movements controlled by CD drive motors.</p>
+                <a href="https://project1.example.com" class="project-link" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="CarRC.png" alt="Line Follower Car">
+                <h2>Line Follower Car</h2>
+                <p>Developed a smart line follower car using Arduino Uno, motor driver, and essential components to autonomously navigate a predefined path.</p>
+                <a href="https://project2.example.com" class="project-link" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="Login.png" alt="Basic Login Authentication">
+                <h2>Basic Login Authentication</h2>
+                <p>A basic login authentication with HTML, CSS, and JS involves creating a styled form and validating input against predefined values.</p>
+                <a href="https://www.linkedin.com/posts/saharshpayer_task4-oasisinfobyte-oasisinfobyteinternship-activity-7151974955318943744-4bqS?utm_source=share&utm_medium=member_desktop" class="project-link" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="Calculator.png" alt="Basic Calculator">
+                <h2>Basic Calculator</h2>
+                <p>Created a fully functional Calculator with a user-friendly interface. It can handle basic arithmetic operations and is designed for a seamless user experience.</p>
+                <a href="https://www.linkedin.com/posts/saharshpayer_task1-oasisinfobyte-oasisinfobyteinternship-activity-7149137488568111105-kVmv?utm_source=share&utm_medium=member_desktop" class="project-link" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="fpga.png" alt="Basys 3 FPGA Calculator">
+                <h2>Basys 3 FPGA Calculator</h2>
+                <p>Verilog code and Vivado software are used to build a basic calculator (+/-) on a Digilent Basys 3 FPGA board.</p>
+                <a href="https://project5.example.com" class="project-link" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>       
+    <section id="education">
+        <h1>Education</h1>
+        <div class="education-grid">
+            <div class="education-card">
+                <img src="terna.png" alt="B.E in Electronics and Telecommunication">
+                <h2>B.E in Electronics and Telecommunication</h2>
+                <p>University of Mumbai, 2020 - 2024</p>
+                <p>Earned a Bachelor of Engineering in Electronics & Telecommunication (EXTC) from Terna Engineering College, achieving a CGPA of 7.8.</p>
+            </div>
+            <div class="education-card">
+                <img src="Vidya.jpg" alt="Jr. College">
+                <h2>HSC, Electronics</h2>
+                <p>Maharashtra State Board, 2018 - 2020</p>
+                <p>Completed Higher Secondary Education (12th) at Vidya Bhavan Jr. College with a score of 58.92%.</p>
+            </div>
+            <div class="education-card">
+                <img src="Vidya.jpg" alt="School">
+                <h2>SSC</h2>
+                <p>Maharashtra State Board, 2018</p>
+                <p>Completed Secondary School Education (10th) at Vidya Bhavan School, securing a commendable 77.80%.</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h1>Skills</h1>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Photoshop</li>
+            <li>Excel</li>
+        </ul>
+    </section>
+    <section id="hobbies">
+        <h1>Hobbies</h1>
+        <ul>
+            <li>Reading Science Fiction</li>
+            <li>Photography</li>
+            <li>Playing Video Games</li>
+            <li>Traveling</li>
+            <li>Listening to Music</li>
+            <li>Watching Documentaries</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="social-media">
+            <h2>Connect with Me</h2>
+            <a href="https://www.linkedin.com/in/saharshpayer/" class="social-icon" target="_blank" title="LinkedIn">
+                <img src="Linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/saharshhh24" class="social-icon" target="_blank" title="GitHub">
+                <img src="Github_page-0001.jpg" alt="GitHub">
+            </a>
+            <a href="https://x.com/Mrsaharsh1" class="social-icon" target="_blank" title="Twitter">
+                <img src="Twitter X Icon.png" alt="Twitter">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100005714746752" class="social-icon" target="_blank" title="Facebook">
+                <img src="Facebook Blue Icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/__saharshhhhh/" class="social-icon" target="_blank" title="Instagram">
+                <img src="Instagram Icon_page-0001.jpg" alt="Instagram">
+            </a>
+        </div>
+    </section>    
+    <script src="scripts.js"></script>
+</body>
+</html>

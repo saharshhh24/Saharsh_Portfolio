@@ -1,0 +1,395 @@
+/* style.css */
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    background: #000;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Home Section */
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('bg.jpg');
+    background-size: 220vh;
+}
+
+#home h1 {
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 2.5em;
+    margin-bottom: 45px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 26px;
+    color: #000;
+    background: #fff;
+    text-decoration: none;
+    border-radius: 32px;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 1.5em;
+}
+
+.btn:hover {
+    background: #ddd;
+    transform: scale(1.05);
+}
+
+/* About Section */
+#about {
+    background: url('bg2.jpg');
+    padding: 50px 20px;
+    background-size: 220vh;
+}
+
+#about h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-info {
+    background: #3bd3ee;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #000;
+}
+
+.about-info p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.about-info p strong {
+    color: #000;
+}
+
+.about-photo {
+    text-align: center;
+}
+
+.about-photo img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Projects Section */
+#projects {
+    background: url('bg3.jpg');
+    padding: 50px 20px;
+    background-size: 210vh;
+}
+
+#projects h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-card h2 {
+    margin-top: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.project-card p {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Styles for Projects Links */
+.project-link {
+    display: inline-block;
+    margin-top: auto; /* Pushes the button to the bottom */
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ff3300;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.project-link:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+/* Education Section */
+#education {
+    background: url('bg4.jpg');
+    background-size: 210vh;
+}
+
+#education h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+.education-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.education-card {
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.education-card h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.education-card p {
+    font-size: 1.3em;
+}
+
+.education-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Skills Section */
+#skills {
+    background: url('bg7.jpg');
+    background-size: 210vh;
+}
+
+#skills h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#skills ul li {
+    background: #444;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#skills ul li:hover {
+    background: #555;
+    transform: scale(1.1);
+}
+
+/* Hobbies Section */
+#hobbies {
+    background: url('bg8.png');
+    background-size: 210vh;
+}
+
+#hobbies h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#hobbies ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#hobbies ul li {
+    background: #444;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#hobbies ul li:hover {
+    background: #555;
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+#contact {
+    background: url('bg9.png');
+    background-size: 210vh;
+    padding: 50px 20px;
+}
+
+#contact h1 {
+    font-size: 2.5em;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    align-self: center;
+    padding: 10px 20px;
+    color: #000;
+    background: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#contact-form button:hover {
+    background: #ddd;
+    transform: scale(1.05);
+}
+
+/* Social Media Section */
+.social-media {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.social-media h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.social-icon img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
